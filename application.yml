@@ -19,3 +19,8 @@ logging:
         springframework:
            web: WARN
            cloud: WARN
+spring:
+   sleuth:
+      log:
+        json:
+          enabled: true
