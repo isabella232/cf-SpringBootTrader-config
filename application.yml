@@ -10,28 +10,28 @@ pivotal:
 logging:
   pattern:
     console: "%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p) %clr(${PID:- }){magenta} %clr(---){faint} %clr([trace=%X{X-Trace-Id:-},span=%X{X-Span-Id:-}]){yellow} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%replace(%xException){'\n','\u2028'}%nopex%n"
-  level:
-    org:
-      springframework:
-        cloud:
-          sleuth:
-            log:
-              Slf4jSpanListener: INFO
-    io:
-      pivotal: DEBUG
-    com:
-      netflix: FATAL
-    org:
-      springframework:
-        web: WARN
-        cloud: WARN
-
-spring:
-  sleuth:
-    schedule:
-      enabled: false # Prevent deluge of HystrixStreamTask logs - https://github.com/spring-cloud/spring-cloud-sleuth/issues/49 
-    integration:
-      enabled: false # Prevent deluge of HystrixStreamTask logs - https://github.com/spring-cloud/spring-cloud-sleuth/issues/49 
+#  level:
+#    org:
+#      springframework:
+#        cloud:
+#          sleuth:
+#            log:
+#              Slf4jSpanListener: INFO
+#    io:
+#      pivotal: DEBUG
+#    com:
+#      netflix: FATAL
+#    org:
+#      springframework:
+#        web: WARN
+#        cloud: WARN
+#
+#spring:
+#  sleuth:
+#    schedule:
+#      enabled: false # Prevent deluge of HystrixStreamTask logs - https://github.com/spring-cloud/spring-cloud-sleuth/issues/49 
+#    integration:
+#      enabled: false # Prevent deluge of HystrixStreamTask logs - https://github.com/spring-cloud/spring-cloud-sleuth/issues/49 
 #   log:
 #     json:
 #       enabled: true
