@@ -20,12 +20,12 @@ logging:
         web: WARN
         cloud: INFO
 
-#spring:
-#  sleuth:
-#    schedule:
-#      enabled: false # Prevent deluge of HystrixStreamTask logs - https://github.com/spring-cloud/spring-cloud-sleuth/issues/49 
-#    integration:
-#      enabled: false # Prevent deluge of HystrixStreamTask logs - https://github.com/spring-cloud/spring-cloud-sleuth/issues/49 
-#   log:
-#     json:
-#       enabled: true
+spring:
+  sleuth:
+    schedule:
+      enabled: false # Prevent deluge of HystrixStreamTask logs - https://github.com/spring-cloud/spring-cloud-sleuth/issues/49 
+    integration:
+      enabled: false # Prevent deluge of HystrixStreamTask logs - https://github.com/spring-cloud/spring-cloud-sleuth/issues/49 
+   log:
+     json:
+       enabled: true
