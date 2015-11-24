@@ -26,8 +26,6 @@ logging:
         web: WARN
         cloud: WARN
 
-springsleuth.integration.enabled=false
-
 spring:
   sleuth:
     integration:
