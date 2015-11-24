@@ -25,9 +25,13 @@ logging:
       springframework:
         web: WARN
         cloud: WARN
-   
-#spring:
-#   sleuth:
-#      log:
-#        json:
-#          enabled: true
+
+springsleuth.integration.enabled=false
+
+spring:
+  sleuth:
+    integration:
+      enabled: false # Prevent deluge of HystrixStreamTask logs - https://github.com/spring-cloud/spring-cloud-sleuth/issues/49 
+#   log:
+#     json:
+#       enabled: true
